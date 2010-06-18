@@ -2,7 +2,8 @@
   <td><%= f.text_field :name %></td>
   <td><%= f.text_field :presentation %></td>	
   <td class="actions">
-    <span class="handle"><%= image_tag('ordering.png', :title => t('drag_to_reorder'), :alt => t('drag_to_reorder')) %>&nbsp;&nbsp;&nbsp;</span>
+    <%= image_tag('ordering.png', :title => t('drag_to_reorder'), :alt => t('drag_to_reorder')) %>
+    &nbsp;&nbsp;&nbsp;
     <%= f.remove_link icon('delete') + ' ' + t("remove") %>
   </td>
 </tr>
